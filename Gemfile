@@ -12,7 +12,7 @@ end
 
 gem 'devise'
 
-#gem 'therubyracer'
+gem 'therubyracer'
 gem 'execjs'
 
 # Gems used only for assets and not required
