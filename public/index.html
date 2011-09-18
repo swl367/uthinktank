@@ -1,241 +1,334 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <title>Ruby on Rails: Welcome aboard</title>
-    <style type="text/css" media="screen">
-      body {
-        margin: 0;
-        margin-bottom: 25px;
-        padding: 0;
-        background-color: #f0f0f0;
-        font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
-        font-size: 13px;
-        color: #333;
-      }
+<head>
+<title>uThinkTank</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+.container {
+	display: block;
+	width: 1680px;	
+}
 
-      h1 {
-        font-size: 28px;
-        color: #000;
-      }
+.content {
+	width:100%;
+}
 
-      a  {color: #03c}
-      a:hover {
-        background-color: #03c;
-        color: white;
-        text-decoration: none;
-      }
+input.login{
+	height:32px;
+	width:181px;	
+}
+input.check{
+	height: 8px;
+	width: 8px;	
+}
 
+input.field{
+	height:31px;
+	width:182px;	
+}
+</style>
 
-      #page {
-        background-color: #f0f0f0;
-        width: 750px;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-      }
+<script type="text/javascript">
 
-      #content {
-        float: left;
-        background-color: white;
-        border: 3px solid #aaa;
-        border-top: none;
-        padding: 25px;
-        width: 500px;
-      }
+function fieldFocus(element) {
+   if (element.value == element.defaultValue) {
+   	element.value = '';
+   }
+   
+} 
 
-      #sidebar {
-        float: right;
-        width: 175px;
-      }
+function fieldBlur(element){
+   if (element.value == '') {
+   	element.value = element.defaultValue;
+   }
+   
+} 
 
-      #footer {
-        clear: both;
-      }
+</script> 
 
-      #header, #about, #getting-started {
-        padding-left: 75px;
-        padding-right: 30px;
-      }
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!-- ImageReady Slices (index.ai) -->
+<table id="Table_01" width="1681" height="801" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td colspan="2" rowspan="3" align="left" valign="top">&nbsp;</td>
+		<td colspan="17" align="left" valign="top">&nbsp;</td>
+		<td colspan="2" align="left" valign="top">
+			<img src="images/index_03.png" width="329" height="143" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="143" alt=""></td>
+	</tr>
+	<tr>
+		<td align="left" valign="top">
+			<img src="images/index_04.png" width="482" height="1" alt=""></td>
+		<td colspan="16" rowspan="2" align="left" valign="top">
+			<img src="images/index_05.png" width="541" height="122" alt=""></td>
+		<td colspan="2" rowspan="2" align="left" valign="top">&nbsp;</td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="2">
+			<img src="images/index_07.png" width="482" height="151" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="121" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2" align="left" valign="top">
+			<img src="images/index_08.png" width="328" height="30" alt=""></td>
+		<td colspan="15" align="left" valign="top">
+			<img src="images/index_09.png" width="535" height="30" alt=""></td>
+		<td colspan="2" rowspan="2" align="left" valign="top">
+			<img src="images/index_10.png" width="7" height="31" alt=""></td>
+		<td align="left" valign="top">
+			<img src="images/index_11.png" width="328" height="30" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="30" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="8" align="left" valign="top">&nbsp;</td>
+		<td colspan="3" rowspan="9" align="left" valign="top">
+			<img src="images/index_13.png" width="484" height="92" alt=""></td>
+		<td colspan="9" rowspan="2" align="left" valign="top">
+			<img src="images/index_14.png" width="262" height="13" alt=""></td>
+		<td colspan="3" rowspan="2" align="left" valign="top">
+			<img src="images/index_15.png" width="194" height="13" alt=""></td>
+		<td colspan="2" rowspan="3" align="left" valign="top">
+			<img src="images/index_16.png" width="78" height="14" alt=""></td>
+		<td rowspan="22" align="left" valign="top">&nbsp;</td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
+	</tr>
+	<tr>
+		<td align="left" valign="top">
+			<img src="images/index_18.png" width="6" height="12" alt=""></td>
+		<td rowspan="21" align="left" valign="top">
+			<img src="images/index_19.png" width="1" height="424" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="12" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="3" rowspan="6" align="left" valign="top">
+			<img src="images/index_20.png" width="72" height="73" alt=""></td>
+		<td colspan="5" rowspan="3" align="left" valign="top"><input name="email" type="text" class="login"></td>
+		<td rowspan="6" align="left" valign="top">
+			<img src="images/index_22.png" width="8" height="73" alt=""></td>
+		<td rowspan="6" align="left" valign="top">
+			<img src="images/index_23.png" width="8" height="73" alt=""></td>
+		<td rowspan="3" align="left" valign="top"><input name="password" type="password" class="login"></td>
+		<td rowspan="6" align="left" valign="top">
+			<img src="images/index_25.png" width="4" height="73" alt=""></td>
+		<td rowspan="2" align="left" valign="top">
+			<img src="images/index_26.png" width="6" height="30" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
+	</tr>
+	<tr>
+		<td align="left" valign="top">
+			<img src="images/index_27.png" width="1" height="29" alt=""></td>
+		<td align="left" valign="top">
+  <img src="images/index_28.png" alt="" width="77" height="29" border="0" usemap="#Map"></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="29" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="3" rowspan="4" align="left" valign="top">
+			<img src="images/index_29.png" width="84" height="43" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="2" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="5" align="left" valign="top">
+			<img src="images/index_30.png" width="182" height="12" alt=""></td>
+		<td rowspan="3" align="left" valign="top">
+			<img src="images/index_31.png" width="182" height="41" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="12" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="2" align="left" valign="top">
+			<img src="images/index_32.png" width="1" height="29" alt=""></td>
+		<td align="left" valign="top"><form name="form1" method="post" action="">
+		  <input type="checkbox" name="checkbox" class="check">
+		  <label for="checkbox"></label>
+</form></td>
+		<td colspan="3" rowspan="2" align="left" valign="top">
+			<img src="images/index_34.png" width="167" height="29" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="13" alt=""></td>
+	</tr>
+	<tr>
+		<td align="left" valign="top">
+			<img src="images/index_35.png" width="14" height="16" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="16" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="14" align="left" valign="top">&nbsp;</td>
+		<td colspan="15" rowspan="2" align="left" valign="top">
+			<img src="images/index_37.png" width="540" height="82" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="6" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="3" rowspan="13" align="left" valign="top">&nbsp;</td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="76" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2" align="left" valign="top">
+			<img src="images/index_39.png" width="71" height="30" alt=""></td>
+		<td colspan="5" rowspan="2" align="left" valign="top"><input name="reg_name" onfocus="fieldFocus(this)" onblur="fieldBlur(this)" type="text" class="field" value="FULL NAME"> </td>
+		<td colspan="8" align="left" valign="top">
+			<img src="images/index_41.png" width="287" height="30" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="30" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2" rowspan="2" align="left" valign="top">
+			<img src="images/index_42.png" width="71" height="22" alt=""></td>
+		<td colspan="8" rowspan="2" align="left" valign="top">
+			<img src="images/index_43.png" width="287" height="22" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="5" align="left" valign="top">
+			<img src="images/index_44.png" width="182" height="21" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="21" alt=""></td>
+	</tr>
+	<tr>
+		<td align="left" valign="top">
+			<img src="images/index_45.png" width="70" height="29" alt=""></td>
+		<td colspan="6" rowspan="2" align="left" valign="top"><input name="reg_email" onfocus="fieldFocus(this)" onblur="fieldBlur(this)" type="text" class="field" value="E-MAIL"></td>
+		<td colspan="8" align="left" valign="top">
+			<img src="images/index_47.png" width="287" height="29" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="29" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="2" align="left" valign="top">
+			<img src="images/index_48.png" width="70" height="23" alt=""></td>
+		<td colspan="8" rowspan="2" align="left" valign="top">
+			<img src="images/index_49.png" width="287" height="23" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="6" align="left" valign="top">
+			<img src="images/index_50.png" width="183" height="22" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="22" alt=""></td>
+	</tr>
+	<tr>
+		<td align="left" valign="top">
+			<img src="images/index_51.png" width="70" height="30" alt=""></td>
+		<td colspan="6" rowspan="2" align="left" valign="top"><input name="reg_pass" onfocus="fieldFocus(this)" onblur="fieldBlur(this)" type="text" class="field" value="PASSWORD"></td>
+		<td colspan="8" align="left" valign="top">
+			<img src="images/index_53.png" width="287" height="30" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="30" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="2" align="left" valign="top">
+			<img src="images/index_54.png" width="70" height="10" alt=""></td>
+		<td colspan="8" rowspan="2" align="left" valign="top">
+			<img src="images/index_55.png" width="287" height="10" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="6" align="left" valign="top">
+			<img src="images/index_56.png" width="183" height="9" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="9" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2" rowspan="2" align="left" valign="top">
+			<img src="images/index_57.png" width="71" height="33" alt=""></td>
+		<td colspan="4" align="left" valign="top">
+			<img src="images/index_58.png" width="89" height="1" alt=""></td>
+		<td colspan="9" rowspan="2" align="left" valign="top">
+			<img src="images/index_59.png" width="380" height="33" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="4" align="left" valign="top">
+    <img src="images/index_60.png" alt="" width="89" height="32" border="0" usemap="#Map2"></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="32" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="15" align="left" valign="top">
+			<img src="images/index_61.png" width="540" height="80" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="80" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2" align="left" valign="top">
+			<img src="images/index_62.png" width="328" height="80" alt=""></td>
+		<td colspan="17" align="left" valign="top">
+			<img src="images/index_63.png" width="1023" height="80" alt=""></td>
+		<td colspan="2" align="left" valign="top">
+			<img src="images/index_64.png" width="329" height="80" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="80" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/spacer.gif" width="327" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="482" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="70" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="14" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="73" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="93" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="8" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="8" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="182" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="4" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="77" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="6" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="328" height="1" alt=""></td>
+		<td></td>
+	</tr>
+</table>
+<!-- End ImageReady Slices -->
 
+<map name="Map">
+  <area shape="rect" coords="6,1,74,29" href="http://uthinktank.com" alt="login">
+</map>
 
-      #header {
-        background-image: url("/assets/rails.png");
-        background-repeat: no-repeat;
-        background-position: top left;
-        height: 64px;
-      }
-      #header h1, #header h2 {margin: 0}
-      #header h2 {
-        color: #888;
-        font-weight: normal;
-        font-size: 16px;
-      }
-
-
-      #about h3 {
-        margin: 0;
-        margin-bottom: 10px;
-        font-size: 14px;
-      }
-
-      #about-content {
-        background-color: #ffd;
-        border: 1px solid #fc0;
-        margin-left: -55px;
-        margin-right: -10px;
-      }
-      #about-content table {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 11px;
-        border-collapse: collapse;
-      }
-      #about-content td {
-        padding: 10px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-      }
-      #about-content td.name  {color: #555}
-      #about-content td.value {color: #000}
-
-      #about-content ul {
-        padding: 0;
-        list-style-type: none;
-      }
-
-      #about-content.failure {
-        background-color: #fcc;
-        border: 1px solid #f00;
-      }
-      #about-content.failure p {
-        margin: 0;
-        padding: 10px;
-      }
-
-
-      #getting-started {
-        border-top: 1px solid #ccc;
-        margin-top: 25px;
-        padding-top: 15px;
-      }
-      #getting-started h1 {
-        margin: 0;
-        font-size: 20px;
-      }
-      #getting-started h2 {
-        margin: 0;
-        font-size: 14px;
-        font-weight: normal;
-        color: #333;
-        margin-bottom: 25px;
-      }
-      #getting-started ol {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #getting-started li {
-        font-size: 18px;
-        color: #888;
-        margin-bottom: 25px;
-      }
-      #getting-started li h2 {
-        margin: 0;
-        font-weight: normal;
-        font-size: 18px;
-        color: #333;
-      }
-      #getting-started li p {
-        color: #555;
-        font-size: 13px;
-      }
-
-
-      #sidebar ul {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #sidebar ul h3 {
-        margin-top: 25px;
-        font-size: 16px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #ccc;
-      }
-      #sidebar li {
-        list-style-type: none;
-      }
-      #sidebar ul.links li {
-        margin-bottom: 5px;
-      }
-
-      .filename {
-        font-style: italic;
-      }
-    </style>
-    <script type="text/javascript">
-      function about() {
-        info = document.getElementById('about-content');
-        if (window.XMLHttpRequest)
-          { xhr = new XMLHttpRequest(); }
-        else
-          { xhr = new ActiveXObject("Microsoft.XMLHTTP"); }
-        xhr.open("GET","rails/info/properties",false);
-        xhr.send("");
-        info.innerHTML = xhr.responseText;
-        info.style.display = 'block'
-      }
-    </script>
-  </head>
-  <body>
-    <div id="page">
-      <div id="sidebar">
-        <ul id="sidebar-items">
-          <li>
-            <h3>Browse the documentation</h3>
-            <ul class="links">
-              <li><a href="http://guides.rubyonrails.org/">Rails Guides</a></li>
-              <li><a href="http://api.rubyonrails.org/">Rails API</a></li>
-              <li><a href="http://www.ruby-doc.org/core/">Ruby core</a></li>
-              <li><a href="http://www.ruby-doc.org/stdlib/">Ruby standard library</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div id="content">
-        <div id="header">
-          <h1>Welcome aboard</h1>
-          <h2>You&rsquo;re riding Ruby on Rails!</h2>
-        </div>
-
-        <div id="about">
-          <h3><a href="rails/info/properties" onclick="about(); return false">About your application&rsquo;s environment</a></h3>
-          <div id="about-content" style="display: none"></div>
-        </div>
-
-        <div id="getting-started">
-          <h1>Getting started</h1>
-          <h2>Here&rsquo;s how to get rolling:</h2>
-
-          <ol>
-            <li>
-              <h2>Use <code>rails generate</code> to create your models and controllers</h2>
-              <p>To see all available options, run it without parameters.</p>
-            </li>
-
-            <li>
-              <h2>Set up a default route and remove <span class="filename">public/index.html</span></h2>
-              <p>Routes are set up in <span class="filename">config/routes.rb</span>.</p>
-            </li>
-
-            <li>
-              <h2>Create your database</h2>
-              <p>Run <code>rake db:create</code> to create your database. If you're not using SQLite (the default), edit <span class="filename">config/database.yml</span> with your username and password.</p>
-            </li>
-          </ol>
-        </div>
-      </div>
-
-      <div id="footer">&nbsp;</div>
-    </div>
-  </body>
+<map name="Map2">
+  <area shape="rect" coords="2,2,84,30" href="http://uthinktank.com" alt="register">
+</map>
+</body>
 </html>
