@@ -120,6 +120,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.1.0)
   devise
+  execjs
   jquery-rails
   pg
   rails (= 3.1.0)
