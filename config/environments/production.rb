@@ -60,4 +60,5 @@ Uthinktank::Application.configure do
 
   # Add the config.action_mailer.default_url_options
   config.action_mailer.default_url_options = { :host => 'uthinktank.heroku.com' }
+
 end
