@@ -5,8 +5,8 @@
 
   <% if user_signed_in? %>
         Signed in as <%= current_user.email %>
-        <%= link_to 'Sign out', destroy_user_session_path, :method => :delete %>
-	<%= javascript_include_tag :defaults %>
+        <%= link_to 'Sign out', destroy_user_session_path, :method => 'delete' %>
+	<%= javascript_include_tag "application" %>
     <% else %>
   
         <%= stylesheet_link_tag    "application" %>
