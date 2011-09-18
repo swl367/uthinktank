@@ -1,7 +1,20 @@
 Uthinktank::Application.routes.draw do
-  devise_for :users
+  devise_for :users`
   root :to => "home#index"
 
+
+  devise_scope :user do
+    get "/login" => "devise/sessions#new"
+  end
+
+  devise_for :users do
+    get "/login" => "devise/sessions#new"
+  end
+
+  devise_scope :user do
+    get "/logout" => "devise/sessions#destroy"
+  end
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
