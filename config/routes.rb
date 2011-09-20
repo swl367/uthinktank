@@ -1,4 +1,6 @@
 Uthinktank::Application.routes.draw do
+  get "pages/home"
+
   devise_for :users
   root :to => "home#index"
 
