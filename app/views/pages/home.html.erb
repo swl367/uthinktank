@@ -25,6 +25,26 @@ input.field{
 	height:31px;
 	width:182px;	
 }
+
+a:link    {
+  /* Applies to all unvisited links */
+  text-decoration:  none;
+  color: grey;
+  font-size: .8em;
+  } 
+a:visited {
+  /* Applies to all visited links */
+  text-decoration:  none;
+  color: grey;
+  font-size: .8em;
+  } 
+a:hover   {
+  /* Applies to links under the pointer */
+  text-decoration:  none;
+  color: grey;
+  font-size: .8em;
+  } 
+
 </style>
 
 <script type="text/javascript">
@@ -60,31 +80,6 @@ function changeInputText(x)
 {
     document.getElementById(x).type ="text";
 }
-
-
-//test
- function switchTo(num)
-  {
-
-  if (num){
-
-
-      document.getElementById('pw_text').style.display="none";
-
-      document.getElementById('pw').style.display="inline";
-
-            document.getElementById('pw').value="";
-
-      document.getElementById('pw').focus();
-
-  } else {
-
-
-           document.getElementById('pw').style.display="none"; 
-document.getElementById('pw_text').style.display="inline";
-
-  }
-   }
 
 
 </script> 
@@ -186,7 +181,8 @@ document.getElementById('pw_text').style.display="inline";
 		<td colspan="5" align="left" valign="top">
 			<img src="images/index_30.png" width="182" height="12" alt=""></td>
 		<td rowspan="3" align="left" valign="top">
-			<img src="images/index_31.png" width="182" height="41" alt=""></td>
+	
+<%= render :partial => "devise/shared/links2" %></td>
 		<td>
 			<img src="images/spacer.gif" width="1" height="12" alt=""></td>
 	</tr>
@@ -385,3 +381,4 @@ document.getElementById('pw_text').style.display="inline";
 </body>
 </html>
 <% end %>
+
