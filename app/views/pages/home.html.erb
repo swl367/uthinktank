@@ -2,87 +2,8 @@
 <head>
 <title>uThinkTank</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<style type="text/css">
-.container {
-	display: block;
-	width: 1680px;	
-}
-
-.content {
-	width:100%;
-}
-
-input.login{
-	height:32px;
-	width:181px;	
-}
-input.check{
-	height: 8px;
-	width: 8px;	
-}
-
-input.field{
-	height:31px;
-	width:182px;	
-}
-
-a:link    {
-  /* Applies to all unvisited links */
-  text-decoration:  none;
-  color: grey;
-  font-size: .8em;
-  } 
-a:visited {
-  /* Applies to all visited links */
-  text-decoration:  none;
-  color: grey;
-  font-size: .8em;
-  } 
-a:hover   {
-  /* Applies to links under the pointer */
-  text-decoration:  none;
-  color: grey;
-  font-size: .8em;
-  } 
-
-</style>
-
-<script type="text/javascript">
-
-function fieldFocus(element) {
-   if (element.value == element.defaultValue) {
-   	element.value = '';
-   }
-   
-} 
-
-function fieldBlur(element){
-  if (element.value == '') {
-   	element.value = element.defaultValue;
-   }
-   
-}
-
-function fieldBlur2(x, element){
-  if (document.getElementById(x).value == '') {
-    document.getElementById(x).type ="text";
-   	document.getElementById(x).value = element.defaultValue;
-   }
-   
-}
-
-function changeInputPass(x)
-{
-    document.getElementById(x).type ="password";
-}
-
-function changeInputText(x)
-{
-    document.getElementById(x).type ="text";
-}
-
-
-</script> 
+<%= stylesheet_link_tag    "login" %>
+<%= javascript_include_tag "login" %>
 
 </head>
 <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">

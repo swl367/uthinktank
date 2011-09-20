@@ -1,0 +1,41 @@
+.container {
+	display: block;
+	width: 1680px;	
+}
+
+.content {
+	width:100%;
+}
+
+input.login{
+	height:32px;
+	width:181px;	
+}
+input.check{
+	height: 8px;
+	width: 8px;	
+}
+
+input.field{
+	height:31px;
+	width:182px;	
+}
+
+a:link    {
+  /* Applies to all unvisited links */
+  text-decoration:  none;
+  color: grey;
+  font-size: .8em;
+  } 
+a:visited {
+  /* Applies to all visited links */
+  text-decoration:  none;
+  color: grey;
+  font-size: .8em;
+  } 
+a:hover   {
+  /* Applies to links under the pointer */
+  text-decoration:  none;
+  color: grey;
+  font-size: .8em;
+  } 
