@@ -4,14 +4,12 @@
 	}
 
 body{
-  background-image:url('images/bg.jpg');
-  background-repeat:repeat-x;
-  background-position: 0% 30%;
-  height: 800px;
+  padding: 0 0 20px 0;
 }
 
 #container{
-  width: 1000px;
+  background:url('images/bg.jpg') repeat-x 0% 230px;
+  width: 100%;
   min-height: 800px;
   z-index: 1;
 	margin-bottom: 50px;
@@ -20,14 +18,14 @@ body{
 #emailtext{
   color: white;
   position: relative;
-  left:75%;
+  left:50%;
   top: -5px;
 }
 
 #pwtext{
   color: white;
   position: relative;
-  left:100%;
+  left:65%;
   top: -25px;
 }
 
@@ -43,48 +41,48 @@ body{
 #login_email{
   position:relative;
   top: 0px;
-  left: 75%;
+  left: 50%;
 }
 
 #login_pw{
   position:relative;
   top: -34px;
-  left: 100%;
+  left: 65%;
 }
 
 #signin{
   position: relative;
   top: -60px;
-  left: 125%;
+  left: 80%;
 }
 
 #forgotpw{
   position: relative;
   top: -50px;
-  left: 75%;
+  left: 50%;
 }
 
 #register_email{
   position: relative;
   margin-top: 10px;
-  left: 75%;
+  left: 50%;
 }
 
 #register_pw{
   position: relative;
   margin-top: 10px;
-  left: 75%;
+  left: 50%;
 }
 
 #register_pwconf{
   position: relative;
   margin-top: 10px;
-  left: 75%;
+  left: 50%;
 }
 
 #signup{
   position: relative;
-  left: 75%;
+  left: 50%;
   margin-top: 10px;
 }
 
@@ -104,11 +102,9 @@ input.field{
 
 #footer {
 	background: url(images/bg.jpg) repeat-x;
-	bottom: -27px;
+	bottom: -400px;
 	height: 54px;
-	position: absolute;
-	width: 200%;
-	padding-left: 37px;
+	position: relative;
 }
 
 a:link    {
@@ -123,9 +119,8 @@ a:visited {
   color: grey;
   font-size: .8em;
   } 
-a:hover   {
-  /* Applies to links under the pointer */
-  text-decoration:  none;
-  color: grey;
-  font-size: .8em;
-  } 
+a:hover {
+	border:1px solid #d7d6b7;
+	border-right:none;
+	border-left:none;
+	}
