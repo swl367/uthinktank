@@ -1,3 +1,9 @@
+body{
+  background-image:url('images/bg.jpg');
+  background-repeat:repeat-x;
+  background-position: 0% 26%;
+}
+
 .container {
 	display: block;
 	width: 1680px;	
