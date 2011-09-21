@@ -21,14 +21,12 @@ body{
 input[type="submit"]
 {
   color: grey;
-  
 }
 
 
 input[type="submit"]:hover
 {
-  color: orange;
-  
+  color: orange;  
 }
 
 #emailtext{
@@ -91,32 +89,39 @@ input[type="submit"]:hover
   left: 65%;
 }
 
-#register_email{
+#register_msg{
   position: absolute;
-  margin-top: 10px;
-  left: 50%;
+  margin-bottom: 10px;
+  left:50%;
   top: 50%;
 }
 
-#register_pw{
+#register_email{
   position: absolute;
   margin-top: 10px;
   left: 50%;
   top: 55%;
 }
 
-#register_pwconf{
+#register_pw{
   position: absolute;
   margin-top: 10px;
   left: 50%;
   top: 60%;
 }
 
+#register_pwconf{
+  position: absolute;
+  margin-top: 10px;
+  left: 50%;
+  top: 65%;
+}
+
 #signup{
   position: absolute;
   left: 50%;
   margin-top: 10px;
-  top: 65%;
+  top: 70%;
 }
 
 input.login{
