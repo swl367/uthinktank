@@ -30,6 +30,8 @@ body{
 }
 
 #mainlogo{
+  background: url('images/logo3.png') no-repeat;
+  min-height: 243px;
 	position:relative;
 	width: 482 px; 
 	height: 243 px;
