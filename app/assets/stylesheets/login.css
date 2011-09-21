@@ -1,21 +1,96 @@
+* {
+	margin: 0;
+	padding: 0;
+	}
+
 body{
   background-image:url('images/bg.jpg');
   background-repeat:repeat-x;
-  background-position: 0% 26%;
+  background-position: 0% 30%;
+  height: 800px;
 }
 
-.container {
-	display: block;
-	width: 1680px;	
+#container{
+  width: 1000px;
+  min-height: 800px;
+  z-index: 1;
+	margin-bottom: 50px;
 }
 
-.content {
-	width:100%;
+#emailtext{
+  color: white;
+  position: relative;
+  left:75%;
+  top: -5px;
+}
+
+#pwtext{
+  color: white;
+  position: relative;
+  left:100%;
+  top: -25px;
+}
+
+#mainlogo{
+	position:relative;
+	width: 482 px; 
+	height: 243 px;
+	top: 108px;
+	left: 15%;
+		
+}
+
+#login_email{
+  position:relative;
+  top: 0px;
+  left: 75%;
+}
+
+#login_pw{
+  position:relative;
+  top: -34px;
+  left: 100%;
+}
+
+#signin{
+  position: relative;
+  top: -60px;
+  left: 125%;
+}
+
+#forgotpw{
+  position: relative;
+  top: -50px;
+  left: 75%;
+}
+
+#register_email{
+  position: relative;
+  margin-top: 10px;
+  left: 75%;
+}
+
+#register_pw{
+  position: relative;
+  margin-top: 10px;
+  left: 75%;
+}
+
+#register_pwconf{
+  position: relative;
+  margin-top: 10px;
+  left: 75%;
+}
+
+#signup{
+  position: relative;
+  left: 75%;
+  margin-top: 10px;
 }
 
 input.login{
-	height:32px;
-	width:181px;	
+	height:30px;
+	width:180px;	
 }
 input.check{
 	height: 8px;
@@ -23,8 +98,17 @@ input.check{
 }
 
 input.field{
-	height:31px;
-	width:182px;	
+	height:30px;
+	width:180px;	
+}
+
+#footer {
+	background: url(images/bg.jpg) repeat-x;
+	bottom: -27px;
+	height: 54px;
+	position: absolute;
+	width: 200%;
+	padding-left: 37px;
 }
 
 a:link    {

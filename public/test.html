@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>uThinkTank</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<%= stylesheet_link_tag    "login" %>
+<%= javascript_include_tag "login" %>
+</head>
+
+<div id="main">
+<div id="mainlogo"><img src="images/logo3.png" alt="" /></div>
+      <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+          
+          <div id="login_email"><%= f.email_field :email, :class => 'login' %></div>
+          <div id="login_pw"> <%= f.password_field :password , :class => 'login' %></div>
+        <%= f.submit "Sign in" %><% end %>
+        <%= render :partial => "devise/shared/links2" %></td>
+		
+        <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+        <%= devise_error_messages! %>
+        <%= f.email_field :email , :class => 'login',  :value => 'E-MAIL', :onfocus => 'fieldFocus(this)' , :onblur => 'fieldBlur(this)' %>
+	      <%= f.email_field :password , :class => 'field', 
+        :value => 'PASSWORD',:id => 'pw', :onfocus => 'changeInputPass(this.id) ; fieldFocus(this)' , :onblur => 'fieldBlur2(this.id, this)' %><%= f.email_field :password_confirmation , :class => 'field', 
+        :value => 'CONFIRM PASSWORD', :id => 'confpw', :onfocus => 'changeInputPass(this.id) ; fieldFocus(this)' , :onblur => 'fieldBlur2(this.id, this)' %>
+        <%= f.submit "Sign up" %>
+      <% end %>
+</div>
+</html>

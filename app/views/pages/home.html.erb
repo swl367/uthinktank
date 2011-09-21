@@ -4,279 +4,30 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <%= stylesheet_link_tag    "login" %>
 <%= javascript_include_tag "login" %>
-
 </head>
-<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-<!-- ImageReady Slices (index.ai) -->
-<table id="Table_01" width="1681" height="801" border="0" cellpadding="0" cellspacing="0">
-	<tr>
-		<td colspan="2" rowspan="3" align="left" valign="top"></td>
-		<td colspan="17" align="left" valign="top"></td>
-		<td colspan="2" align="left" valign="top"></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="143" alt=""></td>
-	</tr>
-	<tr>
-		<td align="left" valign="top">
-			<img src="images/index_04.png" width="482" height="1" alt=""></td>
-		<td colspan="16" rowspan="2" align="left" valign="top"></td>
-		<td colspan="2" rowspan="2" align="left" valign="top"></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
-	</tr>
-	<tr>
-		<td rowspan="2">
-			<img src="images/logo3.png" width="482" height="243" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="121" alt=""></td>
-	</tr>
-	<tr>
-		<td colspan="2" align="left" valign="top">
-    </td>
-		<td colspan="15" align="left" valign="top"></td>
-		<td colspan="2" rowspan="2" align="left" valign="top"></td>
-		<td align="left" valign="top"></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="30" alt=""></td>
-	</tr>
-	<tr>
-		<td rowspan="8" align="left" valign="top"></td>
-    <td colspan="3" rowspan="9" align="left" valign="top"></td>
-		<td colspan="9" rowspan="2" align="left" valign="top">&nbsp;</td>
-		<td colspan="3" rowspan="2" align="left" valign="top">&nbsp;</td>
-		<td colspan="2" rowspan="3" align="left" valign="top">
-			<img src="images/index_16.png" width="78" height="14" alt=""></td>
-		<td rowspan="22" align="left" valign="top"></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
-	</tr>
-	<tr>
-		<td align="left" valign="top">
-			<img src="images/index_18.png" width="6" height="12" alt=""></td>
-		<td rowspan="21" align="left" valign="top">
-			<img src="images/index_19.png" width="1" height="424" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="12" alt=""></td>
-	</tr>
-	<tr>
-		<td colspan="3" rowspan="6" align="left" valign="top">
-			<img src="images/index_20.png" width="72" height="73" alt=""></td>
+<body>
+<div id="container">
+      <div id="mainlogo"><img src="images/logo3.png" alt="" /></div>
+      <div id="emailtext"><p>Email</p></div>
+      <div id="pwtext"><p>Password</p></div>
       <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
           
-		<td colspan="5" rowspan="3" align="left" valign="top"><%= f.email_field :email, :class => 'login' %></td>
-    <td rowspan="6" align="left" valign="top">
-			<img src="images/index_22.png" width="8" height="73" alt=""></td>
-		<td rowspan="6" align="left" valign="top">
-			<img src="images/index_23.png" width="8" height="73" alt=""></td>
-		<td rowspan="3" align="left" valign="top"><%= f.password_field :password , :class => 'login' %></td>
-		<td rowspan="6" align="left" valign="top">
-			<img src="images/index_25.png" width="4" height="73" alt=""></td>
-		<td rowspan="2" align="left" valign="top">
-			<img src="images/index_26.png" width="6" height="30" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
-	</tr>
-	<tr>
-		<td align="left" valign="top">
-			<img src="images/index_27.png" width="1" height="29" alt=""></td>
-		<td align="left" valign="top">
-  <%= f.submit "Sign in" %><% end %></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="29" alt=""></td>
-	</tr>
-	<tr>
-		<td colspan="3" rowspan="4" align="left" valign="top"></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="2" alt=""></td>
-	</tr>
-	<tr>
-		<td colspan="5" align="left" valign="top">
-			<img src="images/index_30.png" width="182" height="12" alt=""></td>
-		<td rowspan="3" align="left" valign="top">
-	
-<%= render :partial => "devise/shared/links2" %></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="12" alt=""></td>
-	</tr>
-	<tr>
-		<td rowspan="2" align="left" valign="top">
-			<img src="images/index_32.png" width="1" height="29" alt=""></td>
-		<td align="left" valign="top"><form name="form1" method="post" action="">
-		  <input type="checkbox" name="checkbox" class="check">
-		  <label for="checkbox"></label>
-</form></td>
-		<td colspan="3" rowspan="2" align="left" valign="top">
-			<img src="images/index_34.png" width="167" height="29" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="13" alt=""></td>
-	</tr>
-	<tr>
-		<td align="left" valign="top">
-			<img src="images/index_35.png" width="14" height="16" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="16" alt=""></td>
-	</tr>
-	<tr>
-		<td rowspan="14" align="left" valign="top"></td>
-		<td colspan="15" rowspan="2" align="left" valign="top"></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="6" alt=""></td>
-	</tr>
-	<tr>
-		<td colspan="3" rowspan="13" align="left" valign="top"></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="76" alt=""></td>
-	</tr>
-	<tr>
-		<td colspan="2" align="left" valign="top"></td>
-      
-      <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
-
-    <td colspan="5" rowspan="2" align="left" valign="top"><%= f.email_field :email , :class => 'login',  :value => 'E-MAIL', :onfocus => 'fieldFocus(this)' , :onblur => 'fieldBlur(this)' %> </td>
-		<td colspan="8" align="left" valign="top">
-			<img src="images/index_41.png" width="287" height="30" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="30" alt=""></td>
-	</tr>
-	<tr>
-		<td colspan="2" rowspan="2" align="left" valign="top"></td>
-		<td colspan="8" rowspan="2" align="left" valign="top">
-			<img src="images/index_43.png" width="287" height="22" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
-	</tr>
-	<tr>
-		<td colspan="5" align="left" valign="top"></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="21" alt=""></td>
-	</tr>
-	<tr>
-		<td align="left" valign="top"></td>
-		<td colspan="6" rowspan="2" align="left" valign="top"><%= f.email_field :password , :class => 'field', 
-    :value => 'PASSWORD',:id => 'pw', :onfocus => 'changeInputPass(this.id) ; fieldFocus(this)' , :onblur => 'fieldBlur2(this.id, this)' %></td>
-		<td colspan="8" align="left" valign="top">
-			<img src="images/index_47.png" width="287" height="29" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="29" alt=""></td>
-	</tr>
-	<tr>
-		<td rowspan="2" align="left" valign="top"></td>
-		<td colspan="8" rowspan="2" align="left" valign="top">
-			<img src="images/index_49.png" width="287" height="23" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
-	</tr>
-	<tr>
-		<td colspan="6" align="left" valign="top"></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="22" alt=""></td>
-	</tr>
-	<tr>
-		<td align="left" valign="top"></td>
-		<td colspan="6" rowspan="2" align="left" valign="top"><%= f.email_field :password_confirmation , :class => 'field', 
-    :value => 'CONFIRM PASSWORD', :id => 'confpw', :onfocus => 'changeInputPass(this.id) ; fieldFocus(this)' , :onblur => 'fieldBlur2(this.id, this)' %></td>
-		<td colspan="8" align="left" valign="top">
-			<img src="images/index_53.png" width="287" height="30" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="30" alt=""></td>
-	</tr>
-	<tr>
-		<td rowspan="2" align="left" valign="top"></td>
-		<td colspan="8" rowspan="2" align="left" valign="top"></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
-	</tr>
-	<tr>
-		<td colspan="6" align="left" valign="top"></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="9" alt=""></td>
-	</tr>
-	<tr>
-		<td colspan="2" rowspan="2" align="left" valign="top"></td>
-		<td colspan="4" align="left" valign="top">
-			<img src="images/index_58.png" width="89" height="1" alt=""></td>
-		<td colspan="9" rowspan="2" align="left" valign="top"></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
-	</tr>
-	<tr>
-		<td colspan="4" align="left" valign="top">
-    <%= f.submit "Sign up" %></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="32" alt=""></td>
-	</tr>
-	<tr>
-		<td colspan="15" align="left" valign="top"></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="80" alt=""></td>
-	</tr>
-	<tr>
-		<td colspan="2" align="left" valign="top">
-			<img src="images/index_62.png" width="328" height="80" alt=""></td>
-		<td colspan="17" align="left" valign="top">
-			<img src="images/index_63.png" width="1023" height="80" alt=""></td>
-		<td colspan="2" align="left" valign="top">
-			<img src="images/index_64.png" width="329" height="80" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="80" alt=""></td>
-	</tr>
-	<tr>
-		<td>
-			<img src="images/spacer.gif" width="327" height="1" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="482" height="1" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="70" height="1" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="14" height="1" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="73" height="1" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="93" height="1" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="8" height="1" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="8" height="1" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="182" height="1" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="4" height="1" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="77" height="1" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="6" height="1" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
-		<td>
-			<img src="images/spacer.gif" width="328" height="1" alt=""></td>
-		<td></td>
-	</tr>
-</table>
-<!-- End ImageReady Slices -->
-
-<map name="Map">
-  <area shape="rect" coords="6,1,74,29" href="http://uthinktank.com" alt="login">
-</map>
-
-<map name="Map2">
-  <area shape="rect" coords="2,2,84,30" href="http://uthinktank.com" alt="register">
-</map>
+          <div id="login_email"><%= f.email_field :email, :class => 'login' %></div>
+          <div id="login_pw"> <%= f.password_field :password , :class => 'login' %></div>
+          <div id="signin">  <%= f.submit "Sign in" %><% end %></div>
+          <div id="forgotpw"><%= render :partial => "devise/shared/links2" %></div>
+		      
+        <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+        <%= devise_error_messages! %>
+        <div id="register_email"><%= f.email_field :email , :class => 'login',  :value => 'E-MAIL', :onfocus => 'fieldFocus(this)' , :onblur => 'fieldBlur(this)' %></div>
+	      <div id="register_pw"><%= f.email_field :password , :class => 'field', 
+        :value => 'PASSWORD',:id => 'pw', :onfocus => 'changeInputPass(this.id) ; fieldFocus(this)' , :onblur => 'fieldBlur2(this.id, this)' %></div>
+        <div id="register_pwconf"><%= f.email_field :password_confirmation , :class => 'field', 
+        :value => 'CONFIRM PASSWORD', :id => 'confpw', :onfocus => 'changeInputPass(this.id) ; fieldFocus(this)' , :onblur => 'fieldBlur2(this.id, this)' %></div>
+        <div id="signup"><%= f.submit "Sign up" %></div>
+      <% end %>
+<div id="footer">
+</div>
+</div>
 </body>
 </html>
-<% end %>
-
