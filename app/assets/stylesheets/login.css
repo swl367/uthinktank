@@ -18,6 +18,18 @@ body{
 	margin-bottom: 50px;
 }
 
+input[type="submit"]
+{
+  color: grey;
+  
+}
+
+input[type="submit"]:hover
+{
+  color: orange;
+  
+}
+
 #emailtext{
 
   font-size:.9em;
