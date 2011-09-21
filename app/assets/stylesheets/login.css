@@ -5,28 +5,34 @@
 
 body{
   padding: 0 0 20px 0;
+  font-family: helvetica;
+  font-size: .8em;
 }
 
 #container{
-  background:url('images/bg.jpg') repeat-x 0% 230px;
+  background:url('images/bg.jpg') repeat-x 0% 30%;
   width: 100%;
   min-height: 800px;
+  position: relative;
   z-index: 1;
 	margin-bottom: 50px;
 }
 
 #emailtext{
+
+  font-size:.9em;
   color: white;
-  position: relative;
+  position: absolute;
   left:50%;
-  top: -5px;
+  top: 30%;
 }
 
 #pwtext{
+  font-size:.9em;
   color: white;
-  position: relative;
+  position: absolute;
   left:65%;
-  top: -23px;
+  top: 30%;
 }
 
 #mainlogo{
@@ -41,51 +47,55 @@ body{
 }
 
 #login_email{
-  position:relative;
-  top: 0px;
+  position:absolute;
+  top: 34%;
   left: 50%;
 }
 
 #login_pw{
-  position:relative;
-  top: -34px;
+  position:absolute;
+  top: 34%;
   left: 65%;
 }
 
 #signin{
-  position: relative;
-  top: -60px;
+  position: absolute;
+  top: 35%;
   left: 80%;
 }
 
 #forgotpw{
-  position: relative;
-  top: -50px;
+  position: absolute;
+  top: 40%;
   left: 50%;
 }
 
 #register_email{
-  position: relative;
+  position: absolute;
   margin-top: 10px;
   left: 50%;
+  top: 50%;
 }
 
 #register_pw{
-  position: relative;
+  position: absolute;
   margin-top: 10px;
   left: 50%;
+  top: 55%;
 }
 
 #register_pwconf{
-  position: relative;
+  position: absolute;
   margin-top: 10px;
   left: 50%;
+  top: 60%;
 }
 
 #signup{
-  position: relative;
+  position: absolute;
   left: 50%;
   margin-top: 10px;
+  top: 65%;
 }
 
 input.login{
@@ -101,13 +111,13 @@ input.field{
 	height:30px;
 	width:180px;	
 }
-
+/*
 #footer {
 	background: url(images/bg.jpg) repeat-x;
-	bottom: -400px;
-	height: 54px;
+	height: 30px;
+  bottom: -27px;
 	position: relative;
-}
+  }*/
 
 a:link    {
   /* Applies to all unvisited links */
