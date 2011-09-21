@@ -24,6 +24,7 @@ input[type="submit"]
   
 }
 
+
 input[type="submit"]:hover
 {
   color: orange;
@@ -76,10 +77,18 @@ input[type="submit"]:hover
   left: 80%;
 }
 
-#forgotpw{
+#rememberme{
+  color: grey;
   position: absolute;
   top: 40%;
   left: 50%;
+}
+
+
+#forgotpw{
+  position: absolute;
+  top: 40%;
+  left: 65%;
 }
 
 #register_email{
@@ -135,13 +144,11 @@ a:link    {
   /* Applies to all unvisited links */
   text-decoration:  none;
   color: grey;
-  font-size: .8em;
   } 
 a:visited {
   /* Applies to all visited links */
   text-decoration:  none;
   color: grey;
-  font-size: .8em;
   } 
 a:hover {
 	border:1px solid #d7d6b7;
