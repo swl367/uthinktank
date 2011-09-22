@@ -138,13 +138,24 @@ input.field{
 	height:30px;
 	width:180px;	
 }
-/*
+
 #footer {
-	background: url(images/bg.jpg) repeat-x;
-	height: 30px;
-  bottom: -27px;
+  background-color: #4D4D4D;
+	height: 100px;
+  width: 1024px;
+  top: 815px;
 	position: relative;
-  }*/
+  float: right;
+  
+  }
+  
+#footertext {
+  position: relative;
+  float: right;
+  top: 40px;
+  right: 10%;
+  color: orange;
+}
 
 a:link    {
   /* Applies to all unvisited links */
