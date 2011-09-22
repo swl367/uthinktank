@@ -4,124 +4,125 @@
 	}
 
 body{
-  padding: 0 0 20px 0;
+  padding: 0 0 0 0;
   font-family: helvetica;
   font-size: .8em;
-}
-
-#container{
   background:url('images/bg.jpg') repeat-x 0% 30%;
   width: 100%;
   min-height: 800px;
-  position: relative;
   z-index: 1;
-	margin-bottom: 50px;
+}
+
+#container{
+  width:1024px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 input[type="submit"]
 {
   color: grey;
+  
 }
 
 
 input[type="submit"]:hover
 {
-  color: orange;  
+  color: orange;
+  
 }
 
 #emailtext{
-
-  font-size:.9em;
+font-size:.9em;
   color: white;
-  position: absolute;
-  left:50%;
-  top: 30%;
+  position: relative;
+  float: left;
+  top: 238px;
+  left: 5%;
+  
 }
 
 #pwtext{
   font-size:.9em;
+  position:relative;
+  top: 238px;
   color: white;
-  position: absolute;
-  left:65%;
-  top: 30%;
+  left: 22%;
 }
 
 #mainlogo{
   background: url('images/logo3.png') no-repeat;
-  min-height: 243px;
 	position:relative;
-	width: 482 px; 
-	height: 243 px;
+	width: 482px; 
+	height: 243px;
 	top: 108px;
-	left: 15%;
-		
+	left: 0;
+  float: left;
 }
 
 #login_email{
-  position:absolute;
-  top: 34%;
-  left: 50%;
+  position: relative;
+  float: left;
+
+  margin-top: 26%;
+  margin-left: 5%;
 }
 
 #login_pw{
-  position:absolute;
-  top: 34%;
-  left: 65%;
+  position: relative;
+  float: left;
+
+  margin-top: 26%;
+  margin-left: 20px;
 }
 
 #signin{
-  position: absolute;
-  top: 35%;
-  left: 80%;
+  position: relative;
+  float: left;
+  margin-left: 20px;
+margin-top: 26.5%;
 }
 
 #rememberme{
+  position: relative;
+  float: right;
   color: grey;
-  position: absolute;
-  top: 40%;
-  left: 50%;
+  right: 38%;
+  margin-top: 20px;
 }
 
 
 #forgotpw{
-  position: absolute;
-  top: 40%;
-  left: 65%;
+  position: relative;
+  float: right;
+  color: grey;
+  right: 5.5%;
+  margin-top: 17px;
 }
 
-#register_msg{
-  position: absolute;
-  margin-bottom: 10px;
-  left:50%;
-  top: 50%;
+#registration{
+  position: relative;
+  float: right;
+  margin-top: 80px;
+  left: 8.5%;
 }
-
 #register_email{
-  position: absolute;
-  margin-top: 10px;
-  left: 50%;
-  top: 55%;
+  padding-top: 10px;
+  
 }
 
 #register_pw{
-  position: absolute;
-  margin-top: 10px;
-  left: 50%;
-  top: 60%;
+  padding-top: 10px;
 }
 
 #register_pwconf{
-  position: absolute;
-  margin-top: 10px;
-  left: 50%;
-  top: 65%;
+  padding-top: 10px;
 }
 
 #signup{
-  position: absolute;
-  left: 50%;
-  margin-top: 10px;
-  top: 70%;
+  padding-top: 10px;
 }
 
 input.login{

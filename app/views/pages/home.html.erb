@@ -22,13 +22,15 @@
           
         <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
         <%= devise_error_messages! %>
-        <div id="register_msg"><h2>Sign up and start changing the world!</h2><br><hr></div>
-        <div id="register_email"><%= f.email_field :email , :class => 'login', :value => 'E-MAIL', :onfocus => 'fieldFocus(this)' , :onblur => 'fieldBlur(this)' %></div>
-	      <div id="register_pw"><%= f.email_field :password , :class => 'field', 
-        :value => 'PASSWORD',:id => 'pw', :onfocus => 'changeInputPass(this.id) ; fieldFocus(this)' , :onblur => 'fieldBlur2(this.id, this)' %></div>
-        <div id="register_pwconf"><%= f.email_field :password_confirmation , :class => 'field', 
-        :value => 'CONFIRM PASSWORD', :id => 'confpw', :onfocus => 'changeInputPass(this.id) ; fieldFocus(this)' , :onblur => 'fieldBlur2(this.id, this)' %></div>
-        <div id="signup"><%= f.submit "Sign up" %></div>
+		<div id="registration">
+			<div id="register_msg"><h2>Sign up and start changing the world!</h2><br><hr></div>
+			<div id="register_email"><%= f.email_field :email , :class => 'login', :value => 'E-MAIL', :onfocus => 'fieldFocus(this)' , :onblur => 'fieldBlur(this)' %></div>
+			  <div id="register_pw"><%= f.email_field :password , :class => 'field', 
+			:value => 'PASSWORD',:id => 'pw', :onfocus => 'changeInputPass(this.id) ; fieldFocus(this)' , :onblur => 'fieldBlur2(this.id, this)' %></div>
+			<div id="register_pwconf"><%= f.email_field :password_confirmation , :class => 'field', 
+			:value => 'CONFIRM PASSWORD', :id => 'confpw', :onfocus => 'changeInputPass(this.id) ; fieldFocus(this)' , :onblur => 'fieldBlur2(this.id, this)' %></div>
+			<div id="signup"><%= f.submit "Sign up" %></div>
+		</div>
       <% end %>
 <div id="footer">
 </div>
